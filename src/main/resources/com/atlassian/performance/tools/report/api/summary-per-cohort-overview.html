@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/1.15.4/sinon.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@atlassian/aui@8.1.0/dist/aui/aui-prototyping.css">
+    <title></title>
+
+</head>
+<body data-aui-version="8.1.0">
+        <div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+<li class="menu-item">
+    <a href="regression test - Data Center/first phase/summary-per-cohort.html" target="iframe">DC - First Phase</a>
+</li>
+<li class="menu-item">
+    <a href="regression test - Data Center/first phase/summary-per-cohort.html" target="iframe">extended csv</a>
+</li>
+<li class="menu-item">
+    <a href="regression test - Data Center/second phase/summary-per-cohort.html" target="iframe">DC - Second Phase</a>
+</li>
+<li class="menu-item">
+    <a href="regression test - Standalone/first phase/summary-per-cohort.html" target="iframe">Standalone - First Phase</a>
+</li>
+<li class="menu-item">
+    <a href="regression test - Standalone/second phase/summary-per-cohort.html" target="iframe">Standalone - Second Phase</a>
+</li>
+
+<br>
+   <iframe src="" name="iframe" height="100%" width="100%" style="border:none;" title="Phase Results"></iframe>
+    
+    <script type="text/javascript">
+        function iframeBody() {
+                var iframe = document.getElementsByTagName("iframe")[0];
+                var elmnt = iframe.contentWindow.document.getElementsByTagName("table")[0];
+                elmnt.style.display = "none";
+        }
+    </script>
+</body>
+</html>
